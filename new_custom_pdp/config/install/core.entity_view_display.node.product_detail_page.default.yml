@@ -1,0 +1,45 @@
+uuid: 1d59b6e5-740e-489b-8303-490b011c8bae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.product_detail_page.field_product
+    - field.field.node.product_detail_page.field_product_summary
+    - field.field.node.product_detail_page.field_zoom
+    - node.type.product_detail_page
+  module:
+    - image
+    - text
+    - user
+id: node.product_detail_page.default
+targetEntityType: node
+bundle: product_detail_page
+mode: default
+content:
+  field_product:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_product_summary:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_zoom:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  links: true

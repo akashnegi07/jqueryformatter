@@ -1,0 +1,19 @@
+cuddly-slider:
+  version: 1.x
+  css:
+    layout:
+      css/bootstrap.min.css: {}
+      css/owl.theme.default.min.css: {}
+      css/owl.carousel.min.css: {}
+      css/new.css: {}
+  js:
+    js/jquery.min.js: {}
+    js/owl.carousel.min.js: {}
+    js/OwlCarousel2Thumbs.min.js: {}
+    js/carosal.js: {}
+
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings

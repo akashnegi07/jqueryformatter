@@ -1,0 +1,26 @@
+uuid: 212429c8-a86c-484a-bc98-3e554bf127f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.product_detail_page.field_product
+    - field.field.node.product_detail_page.field_product_summary
+    - field.field.node.product_detail_page.field_zoom
+    - node.type.product_detail_page
+  module:
+    - user
+id: node.product_detail_page.teaser
+targetEntityType: node
+bundle: product_detail_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_product: true
+  field_product_summary: true
+  field_zoom: true

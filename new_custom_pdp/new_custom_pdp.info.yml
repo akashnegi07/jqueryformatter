@@ -1,0 +1,8 @@
+name: New PDP desgin
+description: Test Custom module
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - new_custom-pdp/cuddly-slider

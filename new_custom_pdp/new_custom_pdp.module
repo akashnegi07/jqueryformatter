@@ -1,0 +1,13 @@
+<?php
+
+function new_custom_pdp_page_attachments_alter(&$variables) {
+
+    $current_uri = \Drupal::request()->getRequestUri();
+
+    if($current_uri == '/assig/product')
+    {
+    $variables['#attached']['library'][] = 'new_custom_pdp/cuddly-slider';
+    }
+    
+    
+}
